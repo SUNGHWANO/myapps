@@ -1,21 +1,3 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
 	
 $(document).ready(function(){
 
@@ -74,7 +56,7 @@ $(document).ready(function(){
 	function Checked(){
 	    
     CheckMember.forEach(function(value){
-       $("#CheckName").append($('<p></p>').text(CheckMember[AddTextCount++]));
+       $("#CheckName").append($('<span></span>').html(CheckMember[AddTextCount++] + "<br>"));
     });
     AddTextCount = 0;
   }
@@ -97,7 +79,7 @@ $(document).ready(function(){
   function NoChecked(){
       
     NoCheckMember.forEach(function(value){
-       $("#NoCheckName").append($('<p></p>').text(NoCheckMember[AddTextCount++]));
+       $("#NoCheckName").append($('<span></span>').html(NoCheckMember[AddTextCount++] + "<br>"));
     });
     AddTextCount = 0;
     document.getElementById("TeamList").innerHTML = "";  
@@ -170,14 +152,14 @@ $(document).ready(function(){
    var input = setInterval(function() {
     
     if (BounceReturn == 0) {
-      $("#Love").css("font-size", BounceCount += 3);
+      $("#Love").css("font-size", BounceCount += 6);
       if (BounceCount == 300) {
     	  BounceReturn = 1;
       }
     }
     
     if (BounceReturn == 1) {
-      $("#Love").css("font-size", BounceCount -= 3);
+      $("#Love").css("font-size", BounceCount -= 6);
         if (BounceCount == 0) {
         	BounceReturn = 0;
         }
@@ -188,7 +170,7 @@ $(document).ready(function(){
    
    if (BounceReturn2 == 0) {
       $("#Who").css("font-size", BounceCount2 += 1);
-      if (BounceCount2 == 80) {
+      if (BounceCount2 == 60) {
         BounceReturn2 = 1;
       }
     }
@@ -199,6 +181,6 @@ $(document).ready(function(){
           BounceReturn2 = 0;
         }
       }
-    }, 30);
+    }, 40);
   }
 });
