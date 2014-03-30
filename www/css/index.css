@@ -16,26 +16,100 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-body {
-  background-color: black;
+body{
+  font-size: 17px;
+  font-weight: normal;
+  background-color: pink;
 }
 
-#h1 {
+
+#title {
+  text-align: center;
+  color : red;
+}
+
+#NameList{
+  margin-top : 60px;
+  margin-left : 20px;
+  width: 200px;
+  float: left;
+  text-align: center; 
+  font-weight: bold;
+  font-size: 150%;
+}
+
+#CheckNameBox , #NoCheckNameBox{
+  margin-top : 60px;
+  margin-left : 20px;
+  width: 150px;
+  float: left;
+  text-align: center; 
+  font-weight: bold;
+  font-size: 150%;
+}
+
+#TeamListBox{
+  margin-top : 60px;
+  margin-left : 20px;
+  width: 190px;
+  float: left;
+  text-align: center; 
+  font-weight: bold;
+  font-size: 150%;
+}
+
+#NameList, #CheckName , #NoCheckName{
+  font-size: 17px;
+  font-weight: normal;
+}
+
+
+#box {
+  width: 800px;
+  float: left;
+  margin-top : 60px;
+  text-align: center;
+  color: red;
+}
+
+#Love {
+  width: 800px;
+  text-align: center;
+  color: red;
+  height: 300px;
+}
+
+#Who{
+  font-size: 100px;
+  color: red;
+}
+
+input {
+  margin: 10px;
+}
+
+#ButtonBox{
   text-align: center;
 }
 
-#btn {
-  text-align: center;
+#get , #shuffle , #Cancel{
+  width: 190px;
+  height : 40px;
+  border-radius : 10px; 
 }
 
-#content1 {
-  text-align: center;
+#TeamList {
+  padding-top : 20px;
+  padding-bottom : 20px;
+  font-size: 17px;
+  font-weight: normal;
+  color : black;
 }
 
-#st {
-  background-color: black;
-  color : white;
-  border: 0px;
+#CheckNameBox {
+  color : blue;
 }
 
-
+#NoCheckNameBox {
+  color : red;
+}
