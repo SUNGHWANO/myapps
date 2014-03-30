@@ -17,7 +17,7 @@
  * under the License.
  */
 	
-$(document).ready(function(){
+
 
 	var CheckMember = [];
 	var NoCheckMember = [];
@@ -201,4 +201,4 @@ $(document).ready(function(){
       }
     }, 30);
   }
-});
+
